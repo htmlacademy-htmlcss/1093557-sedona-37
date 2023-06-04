@@ -2,19 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
 		<div class="wrapper">
 			<header class="header">
-				<a href="#" class="header-left">
+				<a href="#" aria-current="page" class="header-link-left">
 					<img src="./images/logo.svg" alt="логотип Седона" class="header-logo">
 				</a>
 
 				<ul class="header-menu">
 					<li class="header-menu-items">
-						<a href="#" class="header-menu-link">Главная</a>
+						<a href="#" class="header-menu-link header-menu-link-active">Главная</a>
 					</li>
 					<li class="header-menu-items">
 						<a href="#" class="header-menu-link">О Седоне</a>
@@ -26,14 +28,19 @@
 
 				<ul class="header-right">
 					<li class="header-right-items">
-						<a href="#" class="header-search">Поиск</a>
+						<a href="#" class="header-search">
+							<span class="visually-hidden">Поиск</span>
+						</a>
 					</li>
 					<li class="header-right-items">
-						<a href="#" class="header-favorites">Избранное</a>
+						<a href="#" class="header-favorites">
+							<span class="header-favorites-quantity">12</span>
+							<span class="visually-hidden">Избранное</span>
+						</a>
 					</li>
 					<li class="header-right-items">
-						<button class="main-btn header-btn">
-							ХОЧУ СЮДА
+						<button class="main-btn btn" type="button">
+							Хочу сюда!
 						</button>
 					</li>
 				</ul>
@@ -42,6 +49,7 @@
 			<main>
 				<section class="main-banner">
 					<h2 class="visually-hidden">Welcome</h2>
+					<img src="./images/welcome.svg" alt="Фоновый текст" class="banner-text">
 				</section>
 
 				<section class="advantages">
@@ -57,7 +65,7 @@
 							<p class="grid-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 						</li>
 						<li class="main-info-item">
-							<img src="#" alt="#">
+							<img class="grid-img" src="#" alt="Фото внешних фасадов">
 						</li>
 						<li class="main-info-item">
 							<span class="grid-title">Небольшая площадь</span>
@@ -72,7 +80,7 @@
 							<p class="grid-text">Большинство едет в Гранд Каньон и толпится там</p>
 						</li>
 						<li class="main-info-item">
-							<img src="#" alt="#">
+							<img class="grid-img" src="#" alt="Фото горных каньонов">
 						</li>
 						<li class="main-info-item">
 							<span class="grid-title">Там есть	мост дьявола</span>
