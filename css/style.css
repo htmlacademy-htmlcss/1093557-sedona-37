@@ -174,3 +174,11 @@ label, a {
 	background-position: 0 50%;
 	background-size: 100% 57px;
 }
+
+
+
+
+
+.footer-social-link:hover path {
+  fill: #68A2CA;
+}
