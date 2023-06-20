@@ -144,7 +144,7 @@ main {
 
 .header-favorites {
 	margin-left: 15px;
-	background-image: url(../images/favorites.svg);
+	background-image: url(../images/likes-icon.svg);
 }
 
 .header-favorites-quantity {
