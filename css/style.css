@@ -16,7 +16,12 @@
 	box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
 	font-family: "PT-Sans", sans-serif;
 }
 
@@ -55,12 +60,19 @@ img {
   display: block;
 }
 
+main {
+  flex-grow: 1;
+}
+
 .visually-hidden {
 	display: none;
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
   max-width: 1200px;
+  min-height: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
 }
