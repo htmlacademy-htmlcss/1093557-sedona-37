@@ -414,9 +414,14 @@ main {
 }
 
 .interested-text {
-  margin: 20px 0 54px;
+  max-width: 592px;
+  margin: 20px auto 54px;
   font-size: 22px;
   color: var(--color-text);
+}
+
+.interested-text-span {
+  display: block;
 }
 
 .interested-btn {
@@ -445,6 +450,8 @@ main {
 
 .subscribe-mail-text {
   display: block;
+  max-width: 475px;
+  margin: 0 auto;
   margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
