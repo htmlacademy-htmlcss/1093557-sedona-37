@@ -1,19 +1,19 @@
 @font-face {
-	font-family: "PT-Sans";
-	font-weight: 400;
-	src: url(../fonts/ptsans-400.woff2);
+  font-family: "PT-Sans";
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2);
 }
 
 @font-face {
-	font-family: "PT-Sans";
-	font-weight: 700;
-	src: url(../fonts/ptsans-700.woff2);
+  font-family: "PT-Sans";
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -22,27 +22,27 @@ html {
 
 body {
   height: 100%;
-	font-family: "PT-Sans", sans-serif;
+  font-family: "PT-Sans", sans-serif;
 }
 
 :root {
-	--color-white: #fff;
-	--color-black: #000;
+  --color-white: #fff;
+  --color-black: #000;
   --color-text: #333333;
-	--color-green: #7DB54F;
+  --color-green: #7DB54F;
   --color-green-hover: #6C9E42;
   --color-blue: #82B3D3;
-	--main-btn-color: #756157;
+  --main-btn-color: #756157;
   --main-btn-color-hover: #615048;
   --blue-hover-color: #68A2CA;
-  --input-hover-color:#E6E6E6;
+  --input-hover-color: #E6E6E6;
   --catalog-input-bg: #F2F2F2;
 }
 
 button {
   text-transform: uppercase;
   cursor: pointer;
-	border: none;
+  border: none;
 }
 
 ul {
@@ -54,7 +54,7 @@ a {
 }
 
 label {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 main {
@@ -62,7 +62,7 @@ main {
 }
 
 .visually-hidden {
-	display: none;
+  display: none;
 }
 
 .wrapper {
@@ -80,11 +80,11 @@ main {
 
 .header {
   position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   max-height: 64px;
-	background-color: var(--color-white);
+  background-color: var(--color-white);
   z-index: 1;
 }
 
@@ -96,40 +96,40 @@ main {
 }
 
 .header-link-left {
-	display: block;
-	margin-right: 44px;
+  display: block;
+  margin-right: 44px;
   align-self: start;
 }
 
 .header-menu {
-	display: flex;
+  display: flex;
   justify-content: space-between;
-	align-items: center;
+  align-items: center;
   max-height: 64px;
 }
 
 .header-menu-items:not(:last-child) {
-	margin-right: 33px;
+  margin-right: 33px;
 }
 
 .header-menu-link {
-	padding: 19px 5px;
-	display: block;
-	text-decoration: none;
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 24px;
-	color: var(--color-dark);
+  padding: 19px 5px;
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--color-dark);
 }
 
 .header-menu-link-active {
-	border-bottom: 2px solid var(--color-black);
+  border-bottom: 2px solid var(--color-black);
 }
 
 .header-right {
-	display: flex;
+  display: flex;
   justify-content: space-between;
-	align-items: center;
+  align-items: center;
 }
 
 .header-right-items:first-child {
@@ -142,40 +142,40 @@ main {
 
 .header-search,
 .header-favorites {
-	position: relative;
-	display: block;
-	width: 20px;
-	height: 20px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: var(--color-white);
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-white);
 }
 
 .header-search {
-	background-image: url(../images/search.svg);
+  background-image: url(../images/search.svg);
 }
 
 .header-favorites {
-	background-image: url(../images/likes-icon.svg);
+  background-image: url(../images/likes-icon.svg);
 }
 
 .header-favorites-quantity {
-	position: absolute;
-	display: block;
-	padding: 4px;
-	right: -8px;
-	top: -10px;
-	background-color: var(--color-green);
-	border-radius: 50%;
-	font-size: 10px;
-	color: var(--color-white);
+  position: absolute;
+  display: block;
+  padding: 4px;
+  right: -8px;
+  top: -10px;
+  background-color: var(--color-green);
+  border-radius: 50%;
+  font-size: 10px;
+  color: var(--color-white);
 }
 
 .btn {
-	background-color: var(--main-btn-color);
-	color: var(--color-white);
-	border-radius: 4px;
-	font-weight: 700;
+  background-color: var(--main-btn-color);
+  color: var(--color-white);
+  border-radius: 4px;
+  font-weight: 700;
 }
 
 .btn:hover,
@@ -189,9 +189,9 @@ main {
 }
 
 .main-btn {
-	padding: 8px 34px;
-	font-size: 16px;
-	line-height: 20px;
+  padding: 8px 34px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .filters {
@@ -202,6 +202,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /*  начало */
 .hotels-title {
   margin-bottom: 8px;
@@ -893,6 +894,6 @@ main {
   transition: all 0.3s linear;
 }
 
-.footer-logo:active path{
+.footer-logo:active path {
   fill: rgba(0, 0, 0, 0.3);
 }
