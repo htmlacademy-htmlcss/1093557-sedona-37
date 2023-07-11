@@ -115,8 +115,8 @@
 
 				<section class="interested">
 					<h2 class="interested-title">Заинтересовались?</h2>
-					<p class="interested-text"> <span class="interested-text-span">Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-					<button class="interested-btn btn">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+					<p class="interested-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<button type="button" class="interested-btn btn">Поиск гостиницы в седоне</button>
 				</section>
 
 				<section class="subscribe-mail">
@@ -177,5 +177,54 @@
         </a>
       </footer>
 		</div>
+
+    <div class="modal">
+      <div class="modal__shadow"></div>
+      <div class="modal__content">
+        <div class="modal__top">
+          <h3 class="modal-title">Поиск гостиницы в Седоне</h3>
+          <button class="modal-btn__exit"></button>
+        </div>
+
+        <ul class="modal__list">
+          <li class="modal__item">
+            <label class="modal__label" for="check-in">Дата Заезда:</label>
+            <div class="modal__input-cont">
+              <input class="madal__date-input" type="date" id="check-in" value="27.04.2020">
+              <span class="modal__span-red modal__span-text">Мы не можем отправить вас в прошлое.</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <label class="modal__label for="departure">Дата Выезда:</label>
+            <div class="modal__input-cont">
+              <input class="madal__date-input" type="date" id="departure" value="1.09.2023">
+              <span class="modal__span-text">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
+          </li>
+          <li class="modal__item">
+            <div class="adults-counter counter">
+              <label class="modal__label for="adults">Взрослые:</label>
+              <div class="counter__field">
+                <button type="button" class="counter__minus">-</button>
+                <input type="text" id="adults" value="2" class="counter__input">
+                <button type="button" class="counter__plus">+</button>
+              </div>
+            </div>
+            <div class="children-counter counter">
+              <label class="modal__label modal__label-children" for="children">Дети:</label>
+              <span class="modal__counter-span">i</span>
+              <div class="counter__field counter__field-children">
+                <button type="button" class="counter__minus">-</button>
+                <input type="text" id="children" value="2" class="counter__input">
+                <button type="button" class="counter__plus">+</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="secondory-btn modal__bnt">Найти</button>
+      </div>
+    </div>
+
+    <script src="./js/script.js"></script>
   </body>
 </html>
