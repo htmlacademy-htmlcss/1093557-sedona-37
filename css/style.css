@@ -680,7 +680,7 @@ main {
 
 .modal__label {
   display: block;
-  margin-right: 24px;
+  min-width: 137px;
   padding: 12px 0;
   font-weight: 700;
   font-size: 20px;
@@ -731,13 +731,52 @@ main {
   align-items: center;
 }
 
-.modal__counter-span {
+.popover {
+  position: relative;
+}
+
+.popover__content {
+  position: absolute;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  top: calc(100% + 15px);
+  left: 50%;
+  background-color: var(--color-text);
+  border-radius: 10px;
+  color: var(--color-white);
+  line-height: 20px;
+  z-index: 1;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity linear 0.3s;
+}
+
+.popover__content:before {
+  position: absolute;
+  content: "";
+  top: -9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid var(--color-text);
+}
+
+.popover__trigger {
   display: block;
   padding: 4px 12px;
   background-color: var(--color-blue);
   color: var(--color-white);
   border-radius: 50%;
   cursor: pointer;
+}
+
+.popover__trigger:hover + .popover__content {
+  opacity: 1;
+  visibility: visible;
 }
 
 .counter__field {
