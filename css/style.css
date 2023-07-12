@@ -674,13 +674,19 @@ main {
   margin-bottom: 23px;
 }
 
+.modal__item_full .modal__label,
+.modal__label.modal__label_adult {
+  min-width: 137px;
+  margin-right: 0;
+}
+
 .modal__item:last-child {
   margin-bottom: 48px;
 }
 
 .modal__label {
   display: block;
-  min-width: 137px;
+  margin-right: 24px;
   padding: 12px 0;
   font-weight: 700;
   font-size: 20px;
@@ -688,6 +694,7 @@ main {
 }
 
 .modal__label-children {
+  min-width: auto;
   margin-right: 10px;
 }
 
@@ -705,6 +712,9 @@ main {
   line-height: 24px;
   border: none;
   background-color: var(--modal-shadow-bgc);
+  background-image: url('../images/icon-calendar.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
   border-radius: 4px;
   cursor: pointer;
 }

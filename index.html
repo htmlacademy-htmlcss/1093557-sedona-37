@@ -216,23 +216,23 @@
     </div>
 
     <ul class="modal__list">
-      <li class="modal__item">
+      <li class="modal__item modal__item_full">
         <label class="modal__label" for="check-in">Дата Заезда:</label>
         <div class="modal__input-cont">
-          <input class="modal__date-input" type="date" id="check-in" value="27.04.2020">
+          <input class="modal__date-input" type="text" id="check-in" value="27 апреля 2020">
           <span class="modal__span-red modal__span-text">Мы не можем отправить вас в прошлое.</span>
         </div>
       </li>
-      <li class="modal__item">
+      <li class="modal__item modal__item_full">
         <label class="modal__label" for="departure">Дата Выезда:</label>
         <div class="modal__input-cont">
-          <input class="modal__date-input" type="date" id="departure" value="1.09.2023">
+          <input class="modal__date-input" type="text" id="departure" value="1 сентября 2023">
           <span class="modal__span-text">На эти даты есть свободные номера. Пока есть.</span>
         </div>
       </li>
       <li class="modal__item">
         <div class="adults-counter counter">
-          <label class="modal__label" for="adults">Взрослые:</label>
+          <label class="modal__label modal__label_adult" for="adults">Взрослые:</label>
           <div class="counter__field">
             <button type="button" class="counter__minus">-</button>
             <input type="text" id="adults" value="2" class="counter__input">
