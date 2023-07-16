@@ -8,7 +8,7 @@
   <title>Hotels</title>
 </head>
 <body>
-<div class="wrapper">
+<div data-test="main" class="wrapper">
   <header class="header container">
     <a href="index.html" class="header-link-left">
       <img src="./images/logo.svg" alt="логотип Седона" class="header-logo">
@@ -48,7 +48,7 @@
   </header>
 
   <main>
-    <section class="filters container">
+    <section data-test="filter" class="filters container">
       <h2 class="hotels-title">Гостиницы Седоны</h2>
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-item">
@@ -121,7 +121,7 @@
       </form>
     </section>
 
-    <div class="hotels-content-wrapper container">
+    <div data-test="catalog" class="hotels-content-wrapper container">
       <section class="hotels-found">
         <h2 class="hotels-found-title">Найдено гостиниц: 38</h2>
         <div class="control-wrapper">
@@ -273,7 +273,7 @@
       </ul>
     </div>
 
-    <section class="subscribe-mail">
+    <section data-test="subscribe" class="subscribe-mail">
       <h2 class="subscribe-mail-title">Подпишитесь на рассылку</h2>
       <span class="subscribe-mail-text">Только полезная информация и никакого спама, честное бойскаутское!</span>
       <div class="mail-form">
@@ -283,7 +283,7 @@
     </section>
   </main>
 
-  <footer class="footer container">
+  <footer data-test="footer" class="footer container">
     <ul class="footer-social-list">
       <li class="social-item">
         <a href="https://vk.com/htmlacademy" class="footer-social-link">

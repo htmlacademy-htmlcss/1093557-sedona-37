@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="header container">
+  <header data-test="main" class="header container">
     <a href="#" aria-current="page" class="header-link-left">
       <img src="./images/logo.svg" alt="логотип Седона" class="header-logo">
     </a>
@@ -48,12 +48,12 @@
   </header>
 
   <main>
-    <section class="main-banner">
+    <section data-test="hero" class="hero">
       <h2 class="visually-hidden">Welcome</h2>
       <img src="./images/welcome.svg" alt="Фоновый текст" class="banner-text">
     </section>
 
-    <section class="advantages">
+    <section data-test="advantages" class="advantages">
       <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
       <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
@@ -62,7 +62,7 @@
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="main-info-list">
         <li class="main-info-item">
-          <span class="grid-title grid-title-white">Настоящий городок</span>
+          <span class="grid-title grid-title-white">Настоящий&nbsp; городок</span>
           <p class="grid-text grid-text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
         <li class="main-info-item">
@@ -84,7 +84,7 @@
           <img class="grid-img" src="./images/mountain-canyons.jpg" alt="Фото горных каньонов">
         </li>
         <li class="main-info-item">
-          <span class="grid-title grid-title-white">Там есть &nbsp; мост дьявола</span>
+          <span class="grid-title grid-title-white">Там есть&nbsp; мост дьявола</span>
           <p class="grid-text grid-text-white">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
       </ul>
@@ -95,7 +95,7 @@
       <span class="rest-text">Опытный персонал и качественное обслуживание!</span>
     </section>
 
-    <section class="services">
+    <section data-test="service" class="services">
       <h2 class="visually-hidden">Сервис</h2>
       <ul class="services-list">
         <li class="services-item">
@@ -113,9 +113,9 @@
       </ul>
     </section>
 
-    <section class="interested">
+    <section data-test="search" class="interested">
       <h2 class="interested-title">Заинтересовались?</h2>
-      <p class="interested-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+      <p class="interested-text">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в
         Седоне</p>
       <button type="button" class="interested-btn btn">Поиск гостиницы в седоне</button>
     </section>
@@ -130,7 +130,7 @@
     </section>
   </main>
 
-  <footer class="footer container">
+  <footer data-test="footer" class="footer container">
     <ul class="footer-social-list">
       <li class="social-item">
         <a href="https://vk.com/htmlacademy" class="footer-social-link">
@@ -207,7 +207,7 @@
   </footer>
 </div>
 
-<div class="modal">
+<div data-test="modal" class="modal">
   <div class="modal__shadow"></div>
   <div class="modal__content">
     <div class="modal__top">
