@@ -276,6 +276,10 @@ main {
   color: var(--color-white);
 }
 
+.catalog-checkbox {
+  width: 150px;
+}
+
 .chekbox-form {
   margin-bottom: 16px;
   position: relative;
@@ -330,6 +334,7 @@ main {
 }
 
 .catalog-radio {
+  width: 148px;
   margin-right: 70px;
 }
 
@@ -387,13 +392,15 @@ main {
 }
 
 .catalog-price {
-  max-width: 288px;
+  position: relative;
+  max-width: 290px;
+  left: 2px;
 }
 
 .catalog-price-btns-top {
   display: flex;
   align-items: center;
-  margin-bottom: 48px;
+  margin-bottom: 45px;
 }
 
 .min-price,
@@ -494,13 +501,14 @@ main {
 }
 
 .toggle-max {
-  left: 75%;
+  left: 71%;
 }
 
 .catalog-btns {
   display: flex;
   flex-direction: column;
   padding-top: 56px;
+  width: 192px;
 }
 
 .catalog-btn-apply,
@@ -509,11 +517,12 @@ main {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  letter-spacing: -1px;
   border-radius: 4px;
 }
 
 .catalog-btn-apply {
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .catalog-btn-reset {
@@ -533,7 +542,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 50px 0 40px;
+  padding: 50px 0 38px;
 }
 
 .hotels-found-title {
@@ -549,9 +558,12 @@ main {
 }
 
 .select-control {
-  min-width: 287px;
-  margin-right: 50px;
-  padding: 15px 4px;
+  min-width: 291px;
+  margin-right: 63px;
+  padding: 12px 15px;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -1.1px;
   border: 2px solid var(--input-hover-color);
   border-radius: 4px;
   cursor: pointer;
@@ -580,10 +592,9 @@ main {
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 24px;
+  padding: 15px 14px;
   background-color: transparent;
   background-repeat: no-repeat;
-  background-position: center;
   border: 2px solid var(--input-hover-color);
   border-radius: 4px;
   cursor: pointer;
@@ -610,14 +621,14 @@ main {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   border-bottom: 1px solid var(--input-hover-color);
 }
 
 .hotels-lists-item {
   width: 340px;
   min-height: 438px;
-  padding: 19px;
+  padding: 20px 19px 21px 18px;
   margin-bottom: 19px;
   border: 1px solid var(--input-hover-color);
   border-radius: 4px;
@@ -625,7 +636,7 @@ main {
 
 .hotels-lists-img {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
 }
 
 .hotels-lists-title {
@@ -638,12 +649,12 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .hotels-lists-text-left,
 .hotels-lists-text-right {
   display: block;
-  margin-bottom: 16px;
   font-size: 18px;
   line-height: 21px;
   color: var(--color-text);
@@ -660,8 +671,9 @@ main {
 .hotels-green-btn {
   width: 140px;
   padding: 8px 0;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
+  letter-spacing: -1.3px;
 }
 
 .hotels-green-btn {
@@ -711,7 +723,7 @@ main {
 .hotels-pagination-lists {
   display: flex;
   align-items: center;
-  padding: 40px 0 60px;
+  padding: 38px 0 60px;
 }
 
 .hotels-pagination-item {
@@ -780,7 +792,7 @@ main {
   display: block;
   max-width: 475px;
   margin: 0 auto;
-  margin-bottom: 54px;
+  margin-bottom: 55px;
   font-size: 22px;
   line-height: 26px;
   color: var(--color-text);
@@ -796,7 +808,10 @@ main {
 .mail-input {
   display: block;
   width: 100%;
-  padding: 8px 20px;
+  padding: 15px 20px 13px;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.7px;
   background-color: var(--catalog-input-bg);
   border: none;
   border-radius: 4px 0 0 4px;
@@ -834,9 +849,10 @@ main {
 }
 
 .subscribe-btn {
-  padding: 8px 40px;
+  padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
+  letter-spacing: -2.1px;
   border-radius: 0 4px 4px 0;
 }
 
