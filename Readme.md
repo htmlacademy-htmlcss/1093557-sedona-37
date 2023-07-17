@@ -2,8 +2,7 @@
 
 * Студент: [Рахман Гаджимурадов](https://up.htmlacademy.ru/htmlcss/37/user/1093557).
 * Наставник: [Владислав Ермолаев](https://htmlacademy.ru/profile/id128353).
-
----
+* Ссылка: [Для просмотра](https://raha-frontend.github.io/1093557-sedona-37/).
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
