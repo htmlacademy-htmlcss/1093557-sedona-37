@@ -18,12 +18,12 @@
 <div class="wrapper">
   <header data-test="main" class="header container">
     <a href="#" aria-current="page" class="header-link-left">
-      <img src="./images/logo.svg" alt="логотип Седона" class="header-logo">
+      <img src="./images/logo.svg" alt="логотип Седона." class="header-logo" width="140px" height="70px">
     </a>
     <nav class="header-nav">
       <ul class="header-menu">
         <li class="header-menu-items">
-          <a href="#" class="header-menu-link header-menu-link-active">Главная</a>
+          <a href="#" aria-current="page" class="header-menu-link header-menu-link-active">Главная</a>
         </li>
         <li class="header-menu-items">
           <a href="#" class="header-menu-link">О Седоне</a>
@@ -32,6 +32,7 @@
           <a href="hotels.html" class="header-menu-link">Гостиницы</a>
         </li>
       </ul>
+    </nav>
 
       <ul class="header-right">
         <li class="header-right-items">
@@ -51,7 +52,6 @@
           </button>
         </li>
       </ul>
-    </nav>
   </header>
 
   <main>
@@ -61,7 +61,7 @@
     </section>
 
     <section data-test="advantages" class="advantages">
-      <h2 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+      <h1 class="advantages-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="advantages-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
     </section>
 
@@ -73,7 +73,7 @@
           <p class="grid-text grid-text-white">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
         <li class="main-info-item">
-          <img class="grid-img" src="./images/facades.jpg" alt="Фото внешних фасадов">
+          <img class="grid-img" src="./images/facades.jpg" alt="Фото внешних фасадов" width="800px" height="385px">
         </li>
         <li class="main-info-item">
           <span class="grid-title">Небольшая площадь</span>
@@ -88,7 +88,7 @@
           <p class="grid-text">Большинство едет в Гранд Каньон и толпится там</p>
         </li>
         <li class="main-info-item">
-          <img class="grid-img" src="./images/mountain-canyons.jpg" alt="Фото горных каньонов">
+          <img class="grid-img" src="./images/mountain-canyons.jpg" alt="Фото горных каньонов" width="800px" height="385px">
         </li>
         <li class="main-info-item">
           <span class="grid-title grid-title-white">Там есть&nbsp; мост дьявола</span>
@@ -106,14 +106,17 @@
       <h2 class="visually-hidden">Сервис</h2>
       <ul class="services-list">
         <li class="services-item">
+          <img src="./images/home-icon.svg" alt="home-icon" width="75px" height="72px" class="services-img">
           <span class="services-title services-title-home">Жильё</span>
           <span class="services-text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё&nbsp;как&nbsp;в кино!</span>
         </li>
         <li class="services-item">
+          <img src="./images/food-icon.svg" alt="home-icon" width="75px" height="72px" class="services-img">
           <span class="services-title services-title-food">Еда</span>
           <span class="services-text">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</span>
         </li>
         <li class="services-item">
+          <img src="./images/souvenirs.svg" alt="home-icon" width="75px" height="72px" class="services-img">
           <span class="services-title services-title-souvenirs">Сувениры</span>
           <span class="services-text">Не только китайского, но&nbsp;и&nbsp;настоящего местного производства!</span>
         </li>
@@ -130,7 +133,7 @@
     <section class="subscribe-mail">
       <h2 class="subscribe-mail-title">Подпишитесь на рассылку</h2>
       <span class="subscribe-mail-text">Только полезная информация и никакого спама, &nbsp; честное бойскаутское!</span>
-      <form action="#" class="mail-form">
+      <form action="https://echo.htmlacademy.ru" class="mail-form">
         <input type="email" class="mail-input" placeholder="Ваш e-mail">
         <button type="submit" class="subscribe-btn secondory-btn">Подписаться</button>
       </form>
@@ -227,45 +230,47 @@
       </button>
     </div>
 
-    <ul class="modal__list">
-      <li class="modal__item modal__item_full">
-        <label class="modal__label" for="check-in">Дата Заезда:</label>
-        <div class="modal__input-cont">
-          <input class="modal__date-input" type="text" id="check-in" value="27 апреля 2020">
-          <span class="modal__span-red modal__span-text">Мы не можем отправить вас в прошлое.</span>
-        </div>
-      </li>
-      <li class="modal__item modal__item_full">
-        <label class="modal__label" for="departure">Дата Выезда:</label>
-        <div class="modal__input-cont">
-          <input class="modal__date-input" type="text" id="departure" value="1 сентября 2023">
-          <span class="modal__span-text">На эти даты есть свободные номера. Пока есть.</span>
-        </div>
-      </li>
-      <li class="modal__item">
-        <div class="adults-counter counter">
-          <label class="modal__label modal__label_adult" for="adults">Взрослые:</label>
-          <div class="counter__field">
-            <button type="button" class="counter__minus"></button>
-            <input type="text" id="adults" value="2" class="counter__input">
-            <button type="button" class="counter__plus"></button>
+    <form action="https://echo.htmlacademy.ru.">
+      <ul class="modal__list">
+        <li class="modal__item modal__item_full">
+          <label class="modal__label" for="check-in">Дата Заезда:</label>
+          <div class="modal__input-cont">
+            <input class="modal__date-input" name="date-start" type="text" id="check-in" value="27 апреля 2020" required>
+            <span class="modal__span-red modal__span-text">Мы не можем отправить вас в прошлое.</span>
           </div>
-        </div>
-        <div class="children-counter counter">
-          <label class="modal__label modal__label-children" for="children">Дети:</label>
-          <div class="popover">
-            <span class="popover__trigger">i</span>
-            <div class="popover__content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+        </li>
+        <li class="modal__item modal__item_full">
+          <label class="modal__label" for="departure">Дата Выезда:</label>
+          <div class="modal__input-cont">
+            <input class="modal__date-input" name="date-end" type="text" id="departure" value="1 сентября 2023" required>
+            <span class="modal__span-text">На эти даты есть свободные номера. Пока есть.</span>
           </div>
-          <div class="counter__field counter__field-children">
-            <button type="button" class="counter__minus"></button>
-            <input type="text" id="children" value="2" class="counter__input">
-            <button type="button" class="counter__plus"></button>
+        </li>
+        <li class="modal__item">
+          <div class="adults-counter counter">
+            <label class="modal__label modal__label_adult" for="adults">Взрослые:</label>
+            <div class="counter__field">
+              <button type="button" class="counter__minus"></button>
+              <input type="text" id="adults" name="adults" value="2" class="counter__input" required>
+              <button type="button" class="counter__plus"></button>
+            </div>
           </div>
-        </div>
-      </li>
-    </ul>
-    <button type="button" class="secondory-btn modal__bnt">Найти</button>
+          <div class="children-counter counter">
+            <label class="modal__label modal__label-children" for="children">Дети:</label>
+            <div class="popover">
+              <span class="popover__trigger">i</span>
+              <div class="popover__content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+            </div>
+            <div class="counter__field counter__field-children">
+              <button type="button" class="counter__minus"></button>
+              <input type="text" id="children" name="children" value="2" class="counter__input" required>
+              <button type="button" class="counter__plus"></button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <button type="submit" class="secondory-btn modal__bnt">Найти</button>
+    </form>
   </div>
 </div>
 
